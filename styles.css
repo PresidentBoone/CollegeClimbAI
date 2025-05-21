@@ -231,7 +231,7 @@
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #000000;
+    background-color: #151414;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -389,7 +389,7 @@
 
 /*ServicesSection*/
 .services {
-    background-color: #000000;
+    background-color: #151414;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -673,5 +673,79 @@
         margin: 0;
         padding: 10px;
         width: 100%;
+    }
+}
+
+/* About Section */
+.about {
+    background: #151414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+}
+.about__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #cec0a6;
+}
+.about__button {
+    font-size: 1rem;
+    font-weight: 700;
+    background: #2a318f;
+    background-image: linear-gradient(to top, #5847ec 0%, #6dc8ec 100%);
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #fff !important; /* Force text to be white */
+    margin-top: 1px; /* Move button even closer to text */
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+    outline: none;
+}
+.about__button a {
+    color: #fff !important;
+    text-decoration: none;
+}
+.about__button:hover {
+    background: #fff;
+    color: #2a318f !important;
+}
+.about__button:hover a {
+    color: #2a318f !important;
+}
+
+@media screen and (max-width: 960px) {
+    .about {
+        height: 160vh;
+    }
+    .about__container {
+        font-size: 1.5rem;
+        font-weight: 700;
+        align-items: center;
+        color: #cec0a6;
+        margin: auto;
+    }
+    .about__button {
+        margin-top: -5rem; /* Move button even closer on medium screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about__container {
+        font-size: 1.2rem;
+        font-weight: 700;
+        align-items: center;
+        color: #cec0a6;
+    }
+    .about__button {
+        margin-top: -5rem; /* Move button flush with text on small screens */
     }
 }

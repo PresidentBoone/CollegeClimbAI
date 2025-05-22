@@ -221,7 +221,7 @@
 /* HomePage info */
 
 .main {
-    background-color: #000000;
+    background-color: #151414;
 }
 
 .main__container {
@@ -679,22 +679,39 @@
 /* About Section */
 .about {
     background: #151414;
+}
+.about__container {
+    margin-top: 5rem;
+    align-items: center;
+    justify-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #151414;
+    color: #cec0a6;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+    text-align: center;
+}
+.about__container {
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 90vh;
 }
-.about__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5rem;
-    flex-wrap: wrap;
-    font-size: 2rem;
-    font-weight: 700;
+
+.about__container h1 {
+    font-size: 6rem;
     color: #cec0a6;
+}
+.about__container h2 {
+    font-size: 2rem;
+}
+.about__container p {
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 .about__button {
     font-size: 1rem;
@@ -704,11 +721,20 @@
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
-    color: #fff !important; /* Force text to be white */
-    margin-top: 1px; /* Move button even closer to text */
+    color: #fff !important;
+    margin-top: 1px;
     cursor: pointer;
     transition: all 0.7s ease-in-out;
     outline: none;
+}
+.about__container {
+    text-align: center;
+    width: 100%;
+    padding: 20 50px;
+}
+
+.about__container img {
+    border-radius: 16px;
 }
 .about__button a {
     color: #fff !important;
@@ -732,20 +758,24 @@
         align-items: center;
         color: #cec0a6;
         margin: auto;
+        text-align: center;
     }
     .about__button {
-        margin-top: -5rem; /* Move button even closer on medium screens */
+        margin-top: 0rem;
     }
 }
 
 @media screen and (max-width: 480px) {
     .about__container {
+        grid-template-columns: 1fr;
         font-size: 1.2rem;
         font-weight: 700;
         align-items: center;
         color: #cec0a6;
+        text-align: center;
     }
     .about__button {
-        margin-top: -5rem; /* Move button flush with text on small screens */
+        padding: 10px 20px;
+        margin-top: 0rem;
     }
 }
